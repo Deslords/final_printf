@@ -6,23 +6,24 @@
 /*   By: zaazarka <zaazarka@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/21 16:06:23 by zaazarka          #+#    #+#             */
-/*   Updated: 2024/02/24 02:43:53 by zaazarka         ###   ########.fr       */
+/*   Updated: 2024/02/27 23:48:28 by zaazarka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int ft_print_s(char *s) {
-    int i = 0;
+int	ft_print_s(char *s)
+{
+	int	i;
 
-    if (!s)
-        s = "(null)";
-
-    while (s[i]) {
-        if (ft_print_c(s[i]) == -1)
-            return (-1);
-        i++;
-    }
-
-    return (i); 
+	i = 0;
+	if (!s)
+		s = "(null)";
+	while (s[i])
+	{
+		if (ft_print_c(s[i]) == -1)
+			return (-1);
+		i++;
+	}
+	return (i);
 }

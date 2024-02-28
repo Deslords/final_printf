@@ -6,13 +6,13 @@
 /*   By: zaazarka <zaazarka@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/21 16:06:31 by zaazarka          #+#    #+#             */
-/*   Updated: 2024/02/21 16:06:33 by zaazarka         ###   ########.fr       */
+/*   Updated: 2024/02/27 22:54:54 by zaazarka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int ft_print_u(unsigned int nbr)
+int	ft_print_u(unsigned int nbr)
 {
-    return (ft_putunbr(nbr));
+	return (ft_putunbr(nbr));
 }

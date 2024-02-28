@@ -6,7 +6,7 @@
 /*   By: zaazarka <zaazarka@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/21 16:01:00 by zaazarka          #+#    #+#             */
-/*   Updated: 2024/02/24 02:27:52 by zaazarka         ###   ########.fr       */
+/*   Updated: 2024/02/28 00:54:38 by zaazarka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ static int	put_everything(const char *str, va_list params, int i)
 	else if (str[i] == 'u')
 		count += ft_print_u((unsigned int) va_arg(params, unsigned int));
 	else if (str[i] == 'x' || str[i] == 'X')
-		count += ft_print_x((unsigned int) va_arg(params, unsigned int), str[i]);
+		count += ft_print_x((unsigned int)va_arg(params, unsigned int), str[i]);
 	else if (str[i] == 'p')
 		count += ft_print_p((uintptr_t) va_arg(params, uintptr_t));
 	else if (str[i] == '%')
@@ -62,4 +62,3 @@ int	ft_printf(const char *input, ...)
 	va_end(params);
 	return (count);
 }
-
